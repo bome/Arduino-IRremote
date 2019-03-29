@@ -333,7 +333,7 @@ class IRsend
 #		endif
 		//......................................................................
 #		if SEND_PRONTO
-			void  sendPronto     (char* code,  bool repeat,  bool fallback) ;
+			bool  sendPronto     (char* code,  bool repeat,  bool fallback) ;
 #		endif
 //......................................................................
 #		if SEND_LEGO_PF

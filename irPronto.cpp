@@ -70,7 +70,8 @@ uint16_t  htow (char* cp)
 
 //+=============================================================================
 //
-bool sendPronto (char* s,  bool repeat,  bool fallback)
+//$$fb fix prototype
+bool IRsend::sendPronto (char* s,  bool repeat,  bool fallback)
 {
 	int       i;
 	int       len;
@@ -138,6 +139,7 @@ bool sendPronto (char* s,  bool repeat,  bool fallback)
 		else        mark (htow(cp) * usec);
 		cp += 4;
 	}
+	return true;
 }
 
 //+=============================================================================
